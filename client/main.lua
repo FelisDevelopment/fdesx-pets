@@ -64,7 +64,7 @@ exports['fd-pets']:OverrideMethod("OnOpeningMenu", function(config, selected)
     local PlayerData = ESX.GetPlayerData()
     local ped = PlayerPedId()
 
-    if not PlayerData.dead and not IsPedRagdoll(oed) and not IsPedFalling(oed) then
+    if not PlayerData.dead and not IsPedRagdoll(ped) and not IsPedFalling(ped) then
         return true
     end
 
